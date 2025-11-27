@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Document</title>
+</head>
+<style>
+
+body{ font-family: "Poppins",sans-serif;
+
+
+}
+
+h1{
+    color: rgb(255, 161, 161);
+    font-size: 30px;
+}
+
+h2{
+    font-size:30px;
+}
+
+
+header{ background-color: aqua;
+
+    height: 80px;
+    padding-left:15rem;
+    padding-right:15rem;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+input{
+    width: 400px;
+    height: 50px;
+    padding-left:20px;
+    border-radius: 50px;
+    font-size: 15px;
+
+    background-image: url(./images/icons/magnifying-glass-solid-full.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 8%;
+}
+
+
+div{ background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+    padding : 5rem;
+
+}
+
+.login{ background-color: rgb(152, 255, 209);
+    
+    width:90px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+    border: 1px solid white;
+    border-radius:50px;
+    cursor: pointer;
+
+}
+
+.go{ background-color: rgb(255, 152, 152);
+    
+    width:200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+
+
+    border: 1px solid white;
+    border-radius:50px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+</style>
+<body>
+    <section>
+    <header>
+        <h1>Mochi Market</h1>
+        <form><input type="text" placeholder="귀여운 이모티콘을 찾아보세요!"></input></form>
+       
+           <a href="#">홈</a>
+           <a href="#">인기</a>
+           <a href="#">신규</a>
+            <button type="button" class="login">로그인</button>
+        
+    </header>
+
+    <div>
+        <h2>당신의 대화를</h2>
+        <h2>더 귀엽게 만들어보세요</h2>
+        <p>매일매일 새로운 작가님들의</p>
+        <p>반짝이는 아이디어를 만나보세요.</p>
+        <button type="button" class="go">인기 이모티콘 보러가기</button>
+    </div>
+
+    </section>
+</body>
+</html>
