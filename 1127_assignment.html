@@ -23,7 +23,8 @@ h2{
 }
 
 
-header{ background-color: aqua;
+header{ background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 10px -5px;
 
     height: 80px;
     padding-left:15rem;
@@ -46,15 +47,25 @@ input{
     background-image: url(./images/icons/magnifying-glass-solid-full.svg);
     background-repeat: no-repeat;
     background-position: right;
+    background-size: contain;
     background-size: 8%;
 }
 
 
-div{ background: #EEAECA;
+section{ background: #EEAECA;
 background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 
-    padding : 5rem;
+ padding : 5rem;
 
+}
+
+div{
+    width:1200px;
+    height: 50%;
+    background-image: url(./images/img/irangi_5.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
 }
 
 .login{ background-color: rgb(152, 255, 209);
@@ -92,7 +103,6 @@ background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 23
 
 </style>
 <body>
-    <section>
     <header>
         <h1>Mochi Market</h1>
         <form><input type="text" placeholder="귀여운 이모티콘을 찾아보세요!"></input></form>
@@ -104,14 +114,16 @@ background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 23
         
     </header>
 
+    <section>
     <div>
-        <h2>당신의 대화를</h2>
-        <h2>더 귀엽게 만들어보세요</h2>
+        <h2>당신의 대화를<br>
+        더 귀엽게 만들어보세요</h2>
         <p>매일매일 새로운 작가님들의</p>
         <p>반짝이는 아이디어를 만나보세요.</p>
         <button type="button" class="go">인기 이모티콘 보러가기</button>
     </div>
-
     </section>
+
+
 </body>
 </html>
