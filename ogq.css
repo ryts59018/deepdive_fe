@@ -37,9 +37,6 @@ body {
   margin: 0 auto;
 }
 
-.goods-container {
-}
-
 .goods-container header {
   display: flex;
   justify-content: space-between;
