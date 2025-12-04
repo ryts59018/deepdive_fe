@@ -71,12 +71,8 @@ console.log(newNumber)
 
 //실전문제 split, filter, join
 function solution2(my_string){
-    return my_string
-      .split("a").join("")
-      .split("e").join("")
-      .split("i").join("")
-      .split("o").join("")
-      .split("u").join("");
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+return my_string.split('').filter(char => !vowels.includes(char)).join('');
 }
 console.log(solution2("beautiful"));
 

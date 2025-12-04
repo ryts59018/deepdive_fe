@@ -31,12 +31,12 @@
 
         //taskList.push(input.value)
         taskList = [...taskList, newTask]
-
+        })
 
         input.value = '';
 
         function readerTask(){
-         ul.innerHTML = '';
+        ul.innerHTML = '';
         taskList.forEach(task => {
         const li = document.createElement('li');
         li.textContent = task;
