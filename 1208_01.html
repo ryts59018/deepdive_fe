@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ #box{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid #333;
+ }
+
+</style>
+<body>
+    <h1>Timer 함수연습</h1>
+    <div id="box"></div>
+    <button id ="start">START</button>
+    <button id = "stop">STOP</button>
+
+    <script>
+        const box = document.getElementById('box')
+        const startBtn = document.getElementById('start')
+        const stopBtn = document.getElementById('stop')
+        let isGold = false;
+
+        let timerId = null;
+
+        function toggleColor() {
+        
+            box.style.backgroundColor = isGold ? 'gold' : 'olive'
+            isGold = !isGold;
+
+        }
+
+        startBtn.addEventListener('click', ()=>{
+            if(timerId !== null){
+            console.log('타이머가 이미 실행중입니다')
+            return;
+            }
+            timerId = setInterval(toggleColor,600)
+            console.log(`타이머 시작 : timerId - ${timerId}`)
+        })
+
+        stopBtn.addEventListener('click', () => {
+            if (timerId !== null) {
+            clearInterval(timerId)
+            console.log(`타이머 종료 : timerId - ${timerId}`)
+            timerId = null;
+            } else {
+                console.log('현재 실행중인 타이머가 없습니다.')
+            }
+        })
+    </script>
+</body>
+</html>
